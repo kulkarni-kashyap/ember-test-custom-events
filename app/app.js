@@ -7,7 +7,7 @@ const App = Application.extend({
   // eslint-disable-next-line ember/avoid-leaking-state-in-ember-objects
   customEvents: {
     fwClick: 'fwClick',
-
+    fwChange: 'fwChange',
   },
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,

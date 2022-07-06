@@ -1,0 +1,31 @@
+<fw-label value="Button" color="yellow"></fw-label><br/>
+<fw-button>Hello</fw-button>
+
+
+<br/><br/><fw-label value="Select" color="yellow"></fw-label><br/>
+<fw-select
+  label="Names"
+  id="Name"
+  placeholder="Your choices"
+  hint-text="Select multiple options"
+  multiple
+>
+  <fw-select-option value="1" selected>Starks</fw-select-option>
+  <fw-select-option value="2">Lannisters</fw-select-option>
+  <fw-select-option value="3">Sand</fw-select-option>
+  <fw-select-option value="4">Greyjoys</fw-select-option>
+  <fw-select-option value="5">Tyrell</fw-select-option>
+</fw-select>
+
+<fw-select
+  label="House Name"
+  id="House"
+  required="true"
+  value="1"
+  placeholder="Your choice"
+>
+  <fw-select-option value="1">Starks</fw-select-option>
+  <fw-select-option value="2">Lannisters</fw-select-option>
+</fw-select>
+
+<button onclick={{action "handleClick"}}>Get selected value programatically</button>
