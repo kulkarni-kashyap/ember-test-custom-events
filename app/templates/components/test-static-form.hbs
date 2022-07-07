@@ -1,0 +1,32 @@
+  <br/><fw-label value="Static form" color="yellow"></fw-label>
+  <fw-form id="fw-static-form" initialValues={{initialValues}}>
+      <fw-form-control
+      type="TEXT"
+      name="first_name"
+      placeholder="First Name"
+      required
+      label="First Name"
+      id="first_name"
+    ></fw-form-control>
+
+    <fw-form-control
+      type="TEXT"
+      name="last_name"
+      placeholder="Last Name"
+      required
+      label="Last Name"
+      id="last_name"
+    ></fw-form-control>
+
+    <fw-form-control
+      name="cin"
+      required
+      label="Custom native in"
+    >
+    <input name="cin" id="cin" placeholder="custom input"
+    autocomplete="off"
+    /></fw-form-control>
+    </fw-form>
+
+<fw-button id="submit-static-form">Submit</fw-button>
+<fw-button id="reset-static-form">Reset</fw-button>
