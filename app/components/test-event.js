@@ -2,6 +2,11 @@
 import Component from '@ember/component';
 
 export default Component.extend({
+    didInsertElement() {
+        this.element.querySelector('#input1').addEventListener('fwFocus', (event) => {
+            console.log('fwFocus fired for:' , event);
+        })
+    },
     actions: {
         handleClick() {
             console.log(this.element.querySelector('#House').getSelectedItem().then(res => console.log(res)));
@@ -21,4 +26,18 @@ export default Component.extend({
                 console.log('Selected Name:', event.detail);
         }
     },
+    fwBlur(event) {
+        console.log('fwBlur event triggered!', event);
+        //Handle the correct component based on the ID.
+        switch (event.target.id) {
+            case 'input1':
+                console.log('Blur fired on input');
+                break;
+            case 'btn1':
+                console.log('Blur fired on button');
+        }
+    },
+    fwInput(event) {
+        console.log('fwInput event triggered!', event);
+    }
 });

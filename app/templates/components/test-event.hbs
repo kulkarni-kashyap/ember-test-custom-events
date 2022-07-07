@@ -1,5 +1,5 @@
 <fw-label value="Button" color="yellow"></fw-label><br/>
-<fw-button>Hello</fw-button>
+<fw-button id="btn1">Hello</fw-button>
 
 
 <br/><br/><fw-label value="Select" color="yellow"></fw-label><br/>
@@ -29,3 +29,18 @@
 </fw-select>
 
 <button onclick={{action "handleClick"}}>Get selected value programatically</button>
+
+<br/><br/><fw-label value="Input" color="yellow"></fw-label><br/>
+<fw-input
+  label="Name"
+  icon-left="add-contact"
+  hint-text="Do not enter your user ID"
+  warning-text="Please use numbers for user ID"
+  error-text="Invalid user ID"
+  state="warning"
+  placeholder="Enter your official name"
+  id="input1"
+  required
+  clear-input
+>
+</fw-input>

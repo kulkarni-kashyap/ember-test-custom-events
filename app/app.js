@@ -8,6 +8,9 @@ const App = Application.extend({
   customEvents: {
     fwClick: 'fwClick',
     fwChange: 'fwChange',
+    fwInput: 'fwInput',
+    fwFocus: 'fwFocus',
+    fwBlur: 'fwBlur',
   },
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
