@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('static-form');
+  this.route('dynamic-form');
+  this.route('atomic-components');
+  this.route('datepicker');
+  this.route('data-table');
 });
 
 export default Router;

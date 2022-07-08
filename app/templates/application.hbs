@@ -1,11 +1,10 @@
 <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+  {{#link-to "atomic-components"}}<li><a href="#contact">Atomic Components</a></li>{{/link-to}}
+  {{#link-to "static-form"}}<li><a href="#home">Static form</a></li>{{/link-to}}
+  {{#link-to "dynamic-form"}}<li><a href="#news">Dynamic form</a></li>{{/link-to}}
+  {{#link-to "datepicker"}}<li><a href="#about">Date picker</a></li>{{/link-to}}
+  {{#link-to "data-table"}}<li><a href="#about">Data table</a></li>{{/link-to}}
 </ul>
-{{test-event}}
-{{test-event2}}
-{{test-static-form}}
-{{test-dynamic-form}}
-{{outlet}}
+<div class="contents">
+    {{outlet}}
+</div>
