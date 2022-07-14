@@ -47,5 +47,9 @@
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
+  },
+  "dependencies": {
+    "@freshworks/crayons": "^3.5.0",
+    "ember-auto-import": "^1.5.2"
   }
 }

@@ -2,6 +2,9 @@ import Application from '@ember/application';
 import Resolver from './resolver';
 import loadInitializers from 'ember-load-initializers';
 import config from './config/environment';
+import {defineCustomElements} from '@freshworks/crayons/loader';
+
+defineCustomElements();
 
 const App = Application.extend({
   // eslint-disable-next-line ember/avoid-leaking-state-in-ember-objects
